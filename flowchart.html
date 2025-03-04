@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slowchart</title>
+    <style>
+        .flowchart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        .flowchart svg {
+            width: 300px;
+            height: 600px;
+        }
+        .flowchart text {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            text-anchor: middle;
+        }
+        .flowchart rect, .flowchart path, .flowchart polygon {
+            fill: white;
+            stroke: black;
+            stroke-width: 2;
+        }
+        .flowchart rect.rounded {
+            rx: 10;
+            ry: 10;
+        }
+        .flowchart .decision-text {
+            font-size: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="flowchart">
+        <svg>
+            <!-- Start -->
+            <rect x="100" y="20" width="100" height="40"></rect>
+            <text x="150" y="45">Start</text>
+            <path d="M150,60 L150,100"></path>
+            
+            <!-- Decision -->
+            <polygon points="150,100 220,170 150,240 80,170"></polygon>
+            <text x="150" y="170" class="decision-text">Di che colore è il cavallo?</text>
+            
+            <!-- Bianco -->
+            <path d="M80,170 L40,170 L40,250"></path>
+            <rect x="10" y="250" width="100" height="40"></rect>
+            <text x="60" y="275">Bianco</text>
+            <path d="M60,290 L60,330"></path>
+            
+            <!-- Marrone -->
+            <path d="M150,240 L150,290"></path>
+            <rect x="100" y="290" width="100" height="40"></rect>
+            <text x="150" y="315">Marrone</text>
+            <path d="M150,330 L150,370"></path>
+            
+            <!-- End -->
+            <rect class="rounded" x="100" y="370" width="100" height="40"></rect>
+            <text x="150" y="395">End</text>
+        </svg>
+    </div>
+</body>
+</html>
