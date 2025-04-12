@@ -1,57 +1,81 @@
-<html>
-<head>
-<style>
-body {
-  background-color: lightblue;
-}
-</style>
+<html lang="it"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 3</title>
+    <style>
+        body {
+            background-color: lightcyan;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color:#ffffff;
+            background-color: purple;
+            text-decoration:underline;
+            border-radius: 100px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: magenta;
+        }
+        p {
+            color: #333333;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-  
-<img src="immagine5.jpeg">
-<h1>codifiche</h1>
-<br>
-le codifiche sono un metodo per associare a ciascun numero di codice una sequenza di bit. Nel caso pi`u semplice ogni carattere ha un numero tra 0 e 127
-e la codifica `e semplicemente la codifica binaria del numero in 7 bit. Acronimo di American Standard Code for Information Interchange.
- servono per esprimere informazioni e messaggi mediante le regole e i simboli di un sistema convenzionale (il codice) stabilito concordemente dall'emettitore e dal ricevitore dei messaggi allo scopo di trasmettere o elaborare automaticamente le informazioni o, talora, di mantenerle segrete: c.
+    <div class="container">
+        <h1>Capitolo 3</h1>
+        <a href="indice.html">Vai al Indice</a>
+        <a href="copertina.html">Vai alla Copertina</a>
+        <a href="capitolo1.html">Vai al Capitolo 1</a>   
+        <a href="capitolo3.html">Vai al capitolo 3 </a>                                                                                                                                                       
+        <p><strong>La codifica:</strong> La codifica è come traduciamo le informazioni dal mondo reale in un linguaggio che i computer possono capire. Fatto con un alfabeto di solo 0 e 1. Con questi due simboli, possiamo rappresentare tutto: numeri, lettere, immagini, suoni.</p>
+        <p><strong>Codifica delle immagini:</strong> La codifica delle immagini è come prendiamo un'immagine e la trasformiamo in una serie di numeri che il computer può leggere.</p>
+        <ul>
+            <li><strong>Pixel:</strong> L'immagine è divisa in tanti quadratini piccolissimi chiamati pixel. Ogni pixel ha un colore specifico.</li>
+            <li><strong>Sequenza:</strong> Il computer memorizza l'immagine come una lunga sequenza di numeri che rappresentano i colori di ogni pixel.</li>
+            <li><strong>Valori numerici:</strong> Ogni colore è rappresentato da un numero. Ad esempio, il rosso potrebbe essere 1, il verde 2 e il blu 3.</li>
+            <li><strong>La Codifica:</strong> 1. Codifica delle Immagini
+                La codifica delle immagini si riferisce al modo in cui le immagini vengono rappresentate digitalmente. Ci sono due principali tecniche di codifica:
+                
+                Immagini Raster (o Bitmap): Ogni immagine è composta da una griglia di pixel, dove ogni pixel ha un valore di colore. Ad esempio, la codifica RGB (Rosso, Verde, Blu) è comune, dove ogni pixel è rappresentato da una combinazione di questi tre colori.
+                Immagini Vettoriali: Queste immagini sono rappresentate da forme geometriche e linee, il che consente di scalare l'immagine senza perdita di qualità. Sono più adatte per grafica e loghi.</li>       
+            <li><strong>Codifica Video:</strong>2. Codifica Video
+                La codifica video è il processo di compressione e conversione di un flusso video in un formato digitale. Alcuni aspetti chiave includono:
+                
+                Codec Video: Un codec (compressore-decompressore) è un software o un dispositivo che codifica e decodifica i dati video. Esempi comuni includono H.264 e MPEG-4.
+                Frame: Un video è composto da una sequenza di fotogrammi (frame), ognuno dei quali è un'immagine statica. La codifica video gestisce come questi fotogrammi vengono compressi e memorizzati.</li>
+            <li><strong>Codifica Audio:</strong>3. Codifica Audio
+                La codifica audio si riferisce al modo in cui i dati audio vengono compressi e archiviati. Ecco alcuni punti importanti:
+                
+                Codec Audio: Simile ai codec video, i codec audio (come MP3, AAC) sono utilizzati per comprimere e decomprimere i dati audio. Questi codec riducono la dimensione del file mantenendo una qualità accettabile.
+                Formati di File: L'audio può essere salvato in vari formati, ognuno con le proprie caratteristiche di qualità e compressione. Ad esempio, i file WAV sono non compressi e di alta qualità, mentre i file MP3 sono compressi e più leggeri.</li>
+            </ul>
+        <p><strong>ASCII (American Standard Code for Information Interchange):</strong> ASCII è un sistema di codifica che utilizza 128 caratteri per rappresentare lettere, numeri, simboli e caratteri di controllo. È un dizionario che associa ogni carattere a un numero specifico. Per esempio, la lettera "A" è codificata come 65, la lettera "B" come 66, e così via.</p>
+    </div>
 
-<h1>Ascii</h1>
-<img src="Ascii.jpeg">
-i file ASCII sono usati per tradurre informazioni
-binarie in semplici documenti di testo come file TXT. Di conseguenza, sono spesso usati come intermediari tra programmi che non supportano i reciproci formati.
-<img src="immagine6.jpeg">
-<h1>immagine</h1>
-  Un'immagine è una rappresentazione visiva di un oggetto, una scena o un'idea. Può essere creata in diversi modi, come il disegno, la fotografia o la grafica digitale.
-<b> Tipi di Immagini</b>
-
-  immagini fisiche → Dipinti, disegni, stampe fotografiche.
-  Immagini digitali → Foto, illustrazioni o rendering su computer.
-  Immagini mentali → Rappresentazioni create nella mente senza un supporto fisico.
-Un'immagine è una funzione 2D f(x.y) che rappresenta una misura opportuna di una o più caratteristiche (luminosità, colore, ecc.)
-di una data scena. Tipicamente L = 2k, dove k è il numero di bit usato per codificare ciascun pixel (profondità del pixel).
-  
-<h1>suoni</h1>
-Un suono è una vibrazione che si propaga attraverso un mezzo elastico (come aria, acqua o solidi) sotto forma di onde meccaniche longitudinali.
-Il nostro orecchio percepisce queste vibrazioni e il cervello le interpreta come suoni.
-L'audio digitale è la trasposizione di suoni (o di registrazioni di suoni in formato analogico, di output elettrici di strumentazione audio elettronica analogica) 
-in una forma digitale che può essere convertita, quasi in tempo reale o in differita, in suoni percepibili dall'uomo anche come identici a quelli originali.
-  
-<img src="suono.jpeg">
-<h1>numeri in (N,Q,Z) </h1>
-L'insieme dei numeri naturali(N) viene sempre identificato dalla lettera N, indicata in matematica con la doppia barra diagonale.
-I numeri naturali sono infiniti e si possono anche definire numeri interi non negativi. I numeri naturali costituiscono i primi numeri a essere stati usati storicamente dall'uomo.
-L'insieme dei numeri razionali (Q) è formato da tutti i numeri interi positivi e negativi e da tutti i numeri frazionali positivi e negativi 
-(es: 1, -1, 1/2, 2/3...). In questo insieme è sempre possibile la somma, la moltiplicazione, la sottrazione e la divisione degli elementi che vi appartengono.
-I numeri relativi, detti anche numeri interi relativi e indicati con il simbolo ℤ,
-sono tutti i numeri interi e sono caratterizzati da un segno negativo, nullo o positivo: Z = {...,−3,−2,−1, 0, 1, 2, 3, ...}
-
-
-
-
-
-
-
-
-
-
-<a href="indice.html">indice</a>
+</body></html>
