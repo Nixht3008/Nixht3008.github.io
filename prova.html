@@ -1,1 +1,80 @@
+<head>
+    <title>Copertina</title>
+    <style>
+        body {
+            background-image: url('Copert.jpeg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            max-width: 800px;
+            margin: 200px auto;
+            padding: 20px;
+            text-align: center;
+            transition: opacity 0.5s ease;
+            /* tolti sfondo e bordo */
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+        }
+
+        .fade {
+            opacity: 0.1;
+        }
+
+        h1 {
+            font-size: 2em;
+            color: #ffffff; /* bianco così si vede sullo sfondo scuro */
+            margin-bottom: 20px;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color: #ffffff;
+            background-color: purple;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: magenta;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="box">
+        <h1>Copertina</h1>
+        <a href="#">Vai al Indice</a>
+        <a href="#">Vai al Capitolo 1</a>
+        <a href="#">Vai al capitolo 2</a>
+        <a href="#">Vai al capitolo 3</a>
+        <a href="#">Vai al capitolo 4</a>
+        <a href="#">Vai al capitolo 5</a>
+    </div>
+
+    <div style="height: 2000px;"></div>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const box = document.getElementById('box');
+            if (window.scrollY > 100) {
+                box.classList.add('fade');
+            } else {
+                box.classList.remove('fade');
+            }
+        });
+    </script>
+
+</body>
 
