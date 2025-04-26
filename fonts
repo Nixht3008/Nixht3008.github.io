@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Arcobaleno nei Font</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .monospace {
+            font-family: monospace;
+            color: #e74c3c;
+            font-size: 20px;
+        }
+        .rosso { color: #ff0000; }
+        .arancione { color: #ff7f00; }
+        .giallo { color: #ffff00; }
+        .verde { color: #008000; }
+        .blu { color: #0000ff; }
+        .indaco { color: #4b0082; }
+        .viola { color: #8a2be2; }
+        .grande {
+            font-size: 24px;
+        }
+        .corsivo {
+            font-style: italic;
+        }
+        .grassetto {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Arcobaleno nei Font</h1>
+
+    <p class="monospace">Testo con un font monospace e colore personalizzato</p>
+
+    <p class="rosso">Questo è un paragrafo con il colore rosso (#ff0000).</p>
+    <p class="arancione">Questo è un paragrafo con il colore arancione (#ff7f00).</p>
+    <p class="giallo">Questo è un paragrafo con il colore giallo (#ffff00).</p>
+    <p class="verde">Questo è un paragrafo con il colore verde (#008000).</p>
+    <p class="blu">Questo è un paragrafo con il colore blu (#0000ff).</p>
+    <p class="indaco">Questo è un paragrafo con il colore indaco (#4b0082).</p>
+    <p class="viola">Questo è un paragrafo con il colore viola (#8a2be2).</p>
+
+    <p class="grande">Questo paragrafo ha una dimensione di testo maggiore (24px).</p>
+
+    <p class="corsivo">Questo testo è in stile corsivo grazie alla proprietà font-style: italic;</p>
+
+    <p class="grassetto">Questo paragrafo ha il testo in grassetto grazie alla proprietà font-weight: bold;</p>
+
+</body>
+</html>
